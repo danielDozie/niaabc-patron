@@ -4,6 +4,7 @@ import { Members } from 'Types'
 import _ from 'lodash';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai'
 import React from 'react';
+import { Button } from '~/components/Button';
 
 export const Architects = ({ memberData }: Members) => {
   const init = 0
@@ -45,10 +46,9 @@ export const Architects = ({ memberData }: Members) => {
             <p className="w-4/5 text-xs py-2 text-black font-light || dark:text-white">Search architects using either full name, phone number or architect&apos;s DMN.</p>
             <input type="text" className="w-4/5 mt-4 border border-gray-200 p-2 capitalize text-xs font- bg-transparent rounded-sm text-black || dark:text-white" placeholder={`Enter search term (Members Count: ${countMembers})`} />
             <div className="pt-2">
-              <button className="flex text-center justify-center gap-x-1 bg-gradient-to-r from-pink-500 to-red-900 text-gray-100 py-1 text-sm font-normal mt-2 rounded-sm w-1/2 cursor-pointer || hover:bg-gradient-to-l hover:from-pink-900 hover:to-red-900"><p className="mt-1">SEARCH</p> <BiSearchAlt size="25" className="pt-1" />
-              </button>
+              <Button type="flat-gradient" text="SEARCH" icon={<BiSearchAlt size="25" className="pt-1" />} />
             </div>
-
+            
             <div className="mt-12">
               <h1 className="text-sm text-black uppercase font-bold mb-2 || dark:text-white">News & Events</h1>
               <div className="flex flex-col overflow-auto h-72">

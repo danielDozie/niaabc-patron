@@ -35,7 +35,7 @@ export default function Index() {
                             <p className="font-bold">{member.firstname} {member.lastname}</p>
                             <p className="">{member.lead_position}</p>
                             <p className="">{member.email}</p>
-                            <a href={`tel:${member.phone}`}><p className="py-4 font-semibold text-gray-900 ">{member.phone.length < 11 ? `${member.phone} Update required` : member.phone}</p></a>
+                            <a href={`tel:${member.phone}`}><p className="py-4 font-semibold text-gray-900 || dark:text-white ">{member.phone.length < 11 ? `${member.phone} Update required` : member.phone}</p></a>
                             
                         </div>
                     </div>

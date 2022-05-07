@@ -8,8 +8,8 @@ export const MemberCard = ({ members }: any) => {
     
     return (<>
         {members && members.map((member: Patron) =>
-        <Link to={`/architects/${member.slug}`}>
-            <div className="w-[170px] h-[230px] md:h-[200px] md:w-[200px] rounded-md  mx-auto shadow-sm bg-gradient-to-tl from-white to-slate-50 || dark:bg-gradient-to-tl dark:from-gray-900 dark:to-slate-900 cursor-pointer hover:" key={member.id}>
+        <Link to={`/architects/${member.slug}`}  key={member.id}>
+            <div className="w-[170px] h-[230px] md:h-[200px] md:w-[200px] rounded-md  mx-auto shadow-sm bg-gradient-to-tl from-white to-slate-50 || dark:bg-gradient-to-tl dark:from-gray-900 dark:to-slate-900 cursor-pointer hover:">
                 <div className="flex">
                     <div className="absolute px-1 bg-teal-700 rounded-sm">
                         <p className="text-right text-white justify-end float-right text-[10px]">{member.lead_position !== "" && member.lead_position !== null ? member.lead_position : null}</p>
